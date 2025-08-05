@@ -1,3 +1,43 @@
+## 14.4.0 - September 2025
+#### Az.NetworkCloud 1.2.1
+* Added breaking change announcement for below cmdlets from fixed array to list.
+  * Cmdlet 'Get/New/Update-AzNetworkCloudAgentPool'
+  * Cmdlet 'Get/New/Update-AzNetworkCloudBareMetalMachine'
+  * Cmdlet 'Get/New/Update-AzNetworkCloudBareMetalMachineKeySet'
+  * Cmdlet 'Get/New/Update-AzNetworkCloudBmcKeySet'
+  * Cmdlet 'Get/New/Update-AzNetworkCloudCluster'
+  * Cmdlet 'Get/New/Update-AzNetworkCloudClusterManager'
+  * Cmdlet 'Get/New/Update-AzNetworkCloudKubernetesCluster'
+  * Cmdlet 'Get/New/Update-AzNetworkCloudKubernetesClusterFeature'
+  * Cmdlet 'Get/New/Update-AzNetworkCloudL2Network'
+  * Cmdlet 'Get/New/Update-AzNetworkCloudL3Network'
+  * Cmdlet 'Get/New/Update-AzNetworkCloudMetricsConfiguration'
+  * Cmdlet 'Get-AzNetworkCloudRackSku'
+  * Cmdlet 'Get/Update-AzNetworkCloudServicesNetwork'
+  * Cmdlet 'Get/Update-AzNetworkCloudStorageAppliance'
+  * Cmdlet 'Get/New/Update-AzNetworkCloudTrunkedNetwork'
+  * Cmdlet 'Get/New/Update-AzNetworkCloudVirtualMachine'
+  * Cmdlet 'Get/New/Update-AzNetworkCloudVolume'
+  * Cmdlet 'New-AzNetworkCloudBgpAdvertisementObject'
+  * Cmdlet 'New-AzNetworkCloudBgpServiceLoadBalancerConfigurationObject'
+  * Cmdlet 'New-AzNetworkCloudControlPlaneNodeConfigurationObject'
+  * Cmdlet 'New-AzNetworkCloudEgressEndpointObject'
+  * Cmdlet 'New-AzNetworkCloudInitialAgentPoolConfigurationObject'
+  * Cmdlet 'New-AzNetworkCloudIpAddressPoolObject'
+  * Cmdlet 'New-AzNetworkCloudRackDefinitionObject'
+  * Cmdlet 'Invoke-AzNetworkCloudBareMetalMachineDataExtract'
+* Added breaking change announcement for removing parameters '-IdentityType' and '-IdentityUserAssignedIdentity' is renamed to '-UserAssignedIdentity'.
+  * Cmdlet 'New-AzNetworkCloudCluster'
+  * Cmdlet 'New-AzNetworkCloudClusterManager'
+  * Cmdlet 'Update-AzNetworkCloudCluster'
+  * Cmdlet 'Update-AzNetworkCloudClusterManager'
+
+#### Az.ServiceFabric 3.6.1
+* Fixed 'Set-AzServiceFabricManagedClusterApplication' to correctly overwrite existing application upgrade policy when '-RecreateApplication' parameter is specified and no other upgrade policy parameters are bound.
+
+#### Az.Sql 6.1.0
+* Fixed 'New-AzSqlDatabaseExport' and 'New-AzSqlDatabaseImport' to use SQL Authentication with ManagedIdentity without any mandatory password
+
 ## 14.3.0 - August 2025
 #### Az.Accounts 5.2.0
 * Fixed an issue where 'Clear-AzContext' does not clear the token cache when broker is enabled.
