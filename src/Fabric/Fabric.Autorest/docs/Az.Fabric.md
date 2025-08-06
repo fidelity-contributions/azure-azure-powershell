@@ -1,6 +1,6 @@
 ---
 Module Name: Az.Fabric
-Module Guid: 57d31237-140c-4af8-886b-ced0ac7f5acf
+Module Guid: 34dfc5e3-f0f7-47db-a548-9b82cce718f6
 Download Help Link: https://learn.microsoft.com/powershell/module/az.fabric
 Help Version: 1.0.0.0
 Locale: en-US

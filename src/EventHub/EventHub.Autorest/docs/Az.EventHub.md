@@ -1,6 +1,6 @@
 ---
 Module Name: Az.EventHub
-Module Guid: e218577f-a5ef-4d91-8828-dedf50f00ec9
+Module Guid: 0f22774c-110a-4aeb-af67-395887fa6e46
 Download Help Link: https://learn.microsoft.com/powershell/module/az.eventhub
 Help Version: 1.0.0.0
 Locale: en-US

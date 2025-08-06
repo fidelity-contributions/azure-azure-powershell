@@ -1,6 +1,6 @@
 ---
 Module Name: Az.DeviceRegistry
-Module Guid: 1a0fe4cd-b9c8-4154-b8ec-e5d780d358a0
+Module Guid: 427ce53d-388b-4eb9-9bb8-006f3bc49f9c
 Download Help Link: https://learn.microsoft.com/powershell/module/az.deviceregistry
 Help Version: 1.0.0.0
 Locale: en-US
