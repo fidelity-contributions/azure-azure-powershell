@@ -159,6 +159,8 @@ Preview modules are not included in this list. Read more about [module version t
   - Change description : PlanName and MemberName will be removed from the InputObject parameter. 
   - This change will take effect on '11/18/2025'- The change is expected to take effect from Az version : '15.0.0'
   - The change is expected to take effect from version : '3.0.0'
+
+- Cmdlet breaking-change will happen to parameter set `GetAzDevCenterAdminImageVersion_List`
   The cmdlet parameter set is being deprecated. There will be no replacement for it.
   - Change description : The default parameter set will change from list dev center image versions to list project image versions. 
   - This change will take effect on '11/18/2025'- The change is expected to take effect from Az version : '15.0.0'
@@ -1018,6 +1020,524 @@ Preview modules are not included in this list. Read more about [module version t
   - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
   - The change is expected to take effect from version : '7.0.0'
 
+## Az.NetworkCloud
+
+### `Get-AzNetworkCloudAgentPool`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IAgentPool' is changing
+  - The following properties in the output type are being deprecated : 'AdministratorConfigurationSshPublicKey' 'AttachedNetworkConfigurationL2Network' 'AttachedNetworkConfigurationL3Network' 'AttachedNetworkConfigurationTrunkedNetwork' 'AvailabilityZone' 'Label' 'Taint'
+  - The following properties are being added to the output type : 'AdministratorConfigurationSshPublicKey' 'AttachedNetworkConfigurationL2Network' 'AttachedNetworkConfigurationL3Network' 'AttachedNetworkConfigurationTrunkedNetwork' 'AvailabilityZone' 'Label' 'Taint'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudBareMetalMachine`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IBareMetalMachine' is changing
+  - The following properties in the output type are being deprecated : 'AssociatedResourceId' 'HardwareInventoryInterface' 'HardwareInventoryNic' 'HybridAksClustersAssociatedId' 'MachineRole' 'SecretRotationStatus' 'VirtualMachinesAssociatedId'
+  - The following properties are being added to the output type : 'AssociatedResourceId' 'HardwareInventoryInterface' 'HardwareInventoryNic' 'HybridAksClustersAssociatedId' 'MachineRole' 'SecretRotationStatus' 'VirtualMachinesAssociatedId'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudBareMetalMachineKeySet`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IBareMetalMachineKeySet' is changing
+  - The following properties in the output type are being deprecated : 'JumpHostsAllowed' 'UserList' 'UserListStatus'
+  - The following properties are being added to the output type : 'JumpHostsAllowed' 'UserList' 'UserListStatus'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudBmcKeySet`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IBmcKeySet' is changing
+  - The following properties in the output type are being deprecated : 'UserList' 'UserListStatus'
+  - The following properties are being added to the output type : 'UserList' 'UserListStatus'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudCluster`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.ICluster' is changing
+  - The following properties in the output type are being deprecated : 'AggregatorOrSingleRackDefinitionBareMetalMachineConfigurationData' 'AggregatorOrSingleRackDefinitionStorageApplianceConfigurationData' 'AvailableUpgradeVersion' 'ComputeRackDefinition' 'WorkloadResourceId'
+  - The following properties are being added to the output type : 'AggregatorOrSingleRackDefinitionBareMetalMachineConfigurationData' 'AggregatorOrSingleRackDefinitionStorageApplianceConfigurationData' 'AvailableUpgradeVersion' 'ComputeRackDefinition' 'WorkloadResourceId'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudClusterManager`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IClusterManager' is changing
+  - The following properties in the output type are being deprecated : 'AvailabilityZone' 'ClusterVersion'
+  - The following properties are being added to the output type : 'AvailabilityZone' 'ClusterVersion'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudKubernetesCluster`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IKubernetesCluster' is changing
+  - The following properties in the output type are being deprecated : 'AadConfigurationAdminGroupObjectId' 'AttachedNetworkConfigurationL2Network' 'AttachedNetworkConfigurationL3Network' 'AttachedNetworkConfigurationTrunkedNetwork' 'AttachedNetworkId' 'AvailableUpgrade' 'BgpServiceLoadBalancerConfigurationBgpAdvertisement' 'BgpServiceLoadBalancerConfigurationBgpPeer' 'BgpServiceLoadBalancerConfigurationIPAddressPool' 'ControlPlaneNodeConfigurationAdministratorConfigurationSshPublicKey' 'ControlPlaneNodeConfigurationAvailabilityZone' 'FeatureStatuses' 'InitialAgentPoolConfiguration' 'L2ServiceLoadBalancerConfigurationIPAddressPool' 'NetworkConfigurationPodCidr' 'NetworkConfigurationServiceCidr' 'Node' 'SshPublicKey'
+  - The following properties are being added to the output type : 'AadConfigurationAdminGroupObjectId' 'AttachedNetworkConfigurationL2Network' 'AttachedNetworkConfigurationL3Network' 'AttachedNetworkConfigurationTrunkedNetwork' 'AttachedNetworkId' 'AvailableUpgrade' 'BgpServiceLoadBalancerConfigurationBgpAdvertisement' 'BgpServiceLoadBalancerConfigurationBgpPeer' 'BgpServiceLoadBalancerConfigurationIPAddressPool' 'ControlPlaneNodeConfigurationAdministratorConfigurationSshPublicKey' 'ControlPlaneNodeConfigurationAvailabilityZone' 'FeatureStatuses' 'InitialAgentPoolConfiguration' 'L2ServiceLoadBalancerConfigurationIPAddressPool' 'NetworkConfigurationPodCidr' 'NetworkConfigurationServiceCidr' 'Node' 'SshPublicKey'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudKubernetesClusterFeature`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IKubernetesClusterFeature' is changing
+  - The following properties in the output type are being deprecated : 'Option'
+  - The following properties are being added to the output type : 'Option'
+  - Change description : The type of property will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudL2Network`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IL2Network' is changing
+  - The following properties in the output type are being deprecated : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'VirtualMachinesAssociatedId'
+  - The following properties are being added to the output type : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'VirtualMachinesAssociatedId'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudL3Network`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IL3Network' is changing
+  - The following properties in the output type are being deprecated : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'VirtualMachinesAssociatedId'
+  - The following properties are being added to the output type : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'VirtualMachinesAssociatedId'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudMetricsConfiguration`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IClusterMetricsConfiguration' is changing
+  - The following properties in the output type are being deprecated : 'DisabledMetric' 'EnabledMetric'
+  - The following properties are being added to the output type : 'DisabledMetric' 'EnabledMetric'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudRackSku`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IRackSku' is changing
+  - The following properties in the output type are being deprecated : 'ComputeMachine' 'ControllerMachine' 'StorageAppliance' 'SupportedRackSkuId'
+  - The following properties are being added to the output type : 'ComputeMachine' 'ControllerMachine' 'StorageAppliance' 'SupportedRackSkuId'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudStorageAppliance`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IStorageAppliance' is changing
+  - The following properties in the output type are being deprecated : 'SecretRotationStatus'
+  - The following properties are being added to the output type : 'SecretRotationStatus'
+  - Change description : The type of property will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudTrunkedNetwork`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.ITrunkedNetwork' is changing
+  - The following properties in the output type are being deprecated : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'IsolationDomainId' 'VirtualMachinesAssociatedId' 'Vlan'
+  - The following properties are being added to the output type : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'IsolationDomainId' 'VirtualMachinesAssociatedId' 'Vlan'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudVirtualMachine`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IVirtualMachine' is changing
+  - The following properties in the output type are being deprecated : 'NetworkAttachment' 'PlacementHint' 'SshPublicKey' 'StorageProfileVolumeAttachment' 'Volume'
+  - The following properties are being added to the output type : 'NetworkAttachment' 'PlacementHint' 'SshPublicKey' 'StorageProfileVolumeAttachment' 'Volume'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Get-AzNetworkCloudVolume`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IVolume' is changing
+  - The following properties in the output type are being deprecated : 'AttachedTo'
+  - The following properties are being added to the output type : 'AttachedTo'
+  - Change description : The type of property will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Invoke-AzNetworkCloudBareMetalMachineDataExtract`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'bool' is changing
+  - The following properties in the output type are being deprecated : 'Argument'
+  - The following properties are being added to the output type : 'Argument'
+  - Change description : The type of property will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzNetworkCloudAgentPool`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IAgentPool' is changing
+  - The following properties in the output type are being deprecated : 'AdministratorConfigurationSshPublicKey' 'AttachedNetworkConfigurationL2Network' 'AttachedNetworkConfigurationL3Network' 'AttachedNetworkConfigurationTrunkedNetwork' 'AvailabilityZone' 'Label' 'Taint'
+  - The following properties are being added to the output type : 'AdministratorConfigurationSshPublicKey' 'AttachedNetworkConfigurationL2Network' 'AttachedNetworkConfigurationL3Network' 'AttachedNetworkConfigurationTrunkedNetwork' 'AvailabilityZone' 'Label' 'Taint'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzNetworkCloudBareMetalMachineKeySet`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IBareMetalMachineKeySet' is changing
+  - The following properties in the output type are being deprecated : 'JumpHostsAllowed' 'UserList' 'UserListStatus'
+  - The following properties are being added to the output type : 'JumpHostsAllowed' 'UserList' 'UserListStatus'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzNetworkCloudBgpAdvertisementObject`
+
+- Parameter breaking-change will happen to all parameter sets
+  - `-Community`
+    
+  - `-IPAddressPool`
+    
+  - `-Peer`
+    
+
+### `New-AzNetworkCloudBgpServiceLoadBalancerConfigurationObject`
+
+- Parameter breaking-change will happen to all parameter sets
+  - `-BgpAdvertisement`
+    
+  - `-BgpPeer`
+    
+  - `-IPAddressPool`
+    
+
+### `New-AzNetworkCloudBmcKeySet`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IBmcKeySet' is changing
+  - The following properties in the output type are being deprecated : 'UserList' 'UserListStatus'
+  - The following properties are being added to the output type : 'UserList' 'UserListStatus'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzNetworkCloudCluster`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.ICluster' is changing
+  - The following properties in the output type are being deprecated : 'AggregatorOrSingleRackDefinitionBareMetalMachineConfigurationData' 'AggregatorOrSingleRackDefinitionStorageApplianceConfigurationData' 'AvailableUpgradeVersion' 'BareMetalMachineConfigurationData' 'ComputeRackDefinition' 'StorageApplianceConfigurationData' 'WorkloadResourceId'
+  - The following properties are being added to the output type : 'AggregatorOrSingleRackDefinitionBareMetalMachineConfigurationData' 'AggregatorOrSingleRackDefinitionStorageApplianceConfigurationData' 'AvailableUpgradeVersion' 'BareMetalMachineConfigurationData' 'ComputeRackDefinition' 'StorageApplianceConfigurationData' 'WorkloadResourceId'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzNetworkCloudClusterManager`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IClusterManager' is changing
+  - The following properties in the output type are being deprecated : 'AvailabilityZone'
+  - The following properties are being added to the output type : 'AvailabilityZone'
+  - Change description : The type of property will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzNetworkCloudControlPlaneNodeConfigurationObject`
+
+- Parameter breaking-change will happen to all parameter sets
+  - `-AdministratorConfigurationSshPublicKey`
+    
+  - `-AvailabilityZone`
+    
+
+### `New-AzNetworkCloudEgressEndpointObject`
+
+- Parameter breaking-change will happen to all parameter sets
+  - `-Endpoint`
+    
+
+### `New-AzNetworkCloudInitialAgentPoolConfigurationObject`
+
+- Parameter breaking-change will happen to all parameter sets
+  - `-AdministratorConfigurationSshPublicKey`
+    
+  - `-AttachedNetworkConfigurationL2Network`
+    
+  - `-AttachedNetworkConfigurationL3Network`
+    
+  - `-AttachedNetworkConfigurationTrunkedNetwork`
+    
+  - `-AvailabilityZone`
+    
+  - `-Label`
+    
+  - `-Taint`
+    
+
+### `New-AzNetworkCloudIpAddressPoolObject`
+
+- Parameter breaking-change will happen to all parameter sets
+  - `-Address`
+    
+
+### `New-AzNetworkCloudKubernetesCluster`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IKubernetesCluster' is changing
+  - The following properties in the output type are being deprecated : 'AadConfigurationAdminGroupObjectId' 'AdministratorConfigurationSshPublicKey' 'AttachedNetworkConfigurationL2Network' 'AttachedNetworkConfigurationL3Network' 'AttachedNetworkConfigurationTrunkedNetwork' 'AttachedNetworkId' 'AvailabilityZone' 'AvailableUpgrade' 'BgpServiceLoadBalancerConfigurationBgpAdvertisement' 'BgpServiceLoadBalancerConfigurationBgpPeer' 'BgpServiceLoadBalancerConfigurationIPAddressPool' 'ControlPlaneNodeConfigurationAdministratorConfigurationSshPublicKey' 'ControlPlaneNodeConfigurationAvailabilityZone' 'FeatureStatuses' 'InitialAgentPoolConfiguration' 'L2ServiceLoadBalancerConfigurationIPAddressPool' 'Label' 'NetworkConfigurationPodCidr' 'NetworkConfigurationServiceCidr' 'Node' 'SshPublicKey' 'Taint'
+  - The following properties are being added to the output type : 'AadConfigurationAdminGroupObjectId' 'AdministratorConfigurationSshPublicKey' 'AttachedNetworkConfigurationL2Network' 'AttachedNetworkConfigurationL3Network' 'AttachedNetworkConfigurationTrunkedNetwork' 'AttachedNetworkId' 'AvailabilityZone' 'AvailableUpgrade' 'BgpServiceLoadBalancerConfigurationBgpAdvertisement' 'BgpServiceLoadBalancerConfigurationBgpPeer' 'BgpServiceLoadBalancerConfigurationIPAddressPool' 'ControlPlaneNodeConfigurationAdministratorConfigurationSshPublicKey' 'ControlPlaneNodeConfigurationAvailabilityZone' 'FeatureStatuses' 'InitialAgentPoolConfiguration' 'L2ServiceLoadBalancerConfigurationIPAddressPool' 'Label' 'NetworkConfigurationPodCidr' 'NetworkConfigurationServiceCidr' 'Node' 'SshPublicKey' 'Taint'
+  - Change description : The type of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzNetworkCloudKubernetesClusterFeature`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IKubernetesClusterFeature' is changing
+  - The following properties in the output type are being deprecated : 'Option'
+  - The following properties are being added to the output type : 'Option'
+  - Change description : The type of property will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzNetworkCloudL2Network`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IL2Network' is changing
+  - The following properties in the output type are being deprecated : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'VirtualMachinesAssociatedId'
+  - The following properties are being added to the output type : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'VirtualMachinesAssociatedId'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzNetworkCloudL3Network`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IL3Network' is changing
+  - The following properties in the output type are being deprecated : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'VirtualMachinesAssociatedId'
+  - The following properties are being added to the output type : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'VirtualMachinesAssociatedId'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzNetworkCloudMetricsConfiguration`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IClusterMetricsConfiguration' is changing
+  - The following properties in the output type are being deprecated : 'DisabledMetric' 'EnabledMetric'
+  - The following properties are being added to the output type : 'DisabledMetric' 'EnabledMetric'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzNetworkCloudRackDefinitionObject`
+
+- Parameter breaking-change will happen to all parameter sets
+  - `-BareMetalMachineConfigurationData`
+    
+  - `-StorageApplianceConfigurationData`
+    
+
+### `New-AzNetworkCloudTrunkedNetwork`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.ITrunkedNetwork' is changing
+  - The following properties in the output type are being deprecated : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'IsolationDomainId' 'VirtualMachinesAssociatedId' 'Vlan'
+  - The following properties are being added to the output type : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'IsolationDomainId' 'VirtualMachinesAssociatedId' 'Vlan'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzNetworkCloudVirtualMachine`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IVirtualMachine' is changing
+  - The following properties in the output type are being deprecated : 'NetworkAttachment' 'PlacementHint' 'SshPublicKey' 'StorageProfileVolumeAttachment' 'Volume'
+  - The following properties are being added to the output type : 'NetworkAttachment' 'PlacementHint' 'SshPublicKey' 'StorageProfileVolumeAttachment' 'Volume'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzNetworkCloudVolume`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IVolume' is changing
+  - The following properties in the output type are being deprecated : 'AttachedTo'
+  - The following properties are being added to the output type : 'AttachedTo'
+  - Change description : The type of property will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudAgentPool`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IAgentPool' is changing
+  - The following properties in the output type are being deprecated : 'AdministratorConfigurationSshPublicKey' 'AttachedNetworkConfigurationL2Network' 'AttachedNetworkConfigurationL3Network' 'AttachedNetworkConfigurationTrunkedNetwork' 'AvailabilityZone' 'Label' 'Taint'
+  - The following properties are being added to the output type : 'AdministratorConfigurationSshPublicKey' 'AttachedNetworkConfigurationL2Network' 'AttachedNetworkConfigurationL3Network' 'AttachedNetworkConfigurationTrunkedNetwork' 'AvailabilityZone' 'Label' 'Taint'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudBareMetalMachine`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IBareMetalMachine' is changing
+  - The following properties in the output type are being deprecated : 'AssociatedResourceId' 'HardwareInventoryInterface' 'HardwareInventoryNic' 'HybridAksClustersAssociatedId' 'MachineRole' 'SecretRotationStatus' 'VirtualMachinesAssociatedId'
+  - The following properties are being added to the output type : 'AssociatedResourceId' 'HardwareInventoryInterface' 'HardwareInventoryNic' 'HybridAksClustersAssociatedId' 'MachineRole' 'SecretRotationStatus' 'VirtualMachinesAssociatedId'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudBareMetalMachineKeySet`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IBareMetalMachineKeySet' is changing
+  - The following properties in the output type are being deprecated : 'JumpHostsAllowed' 'UserList' 'UserListStatus'
+  - The following properties are being added to the output type : 'JumpHostsAllowed' 'UserList' 'UserListStatus'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudBmcKeySet`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IBmcKeySet' is changing
+  - The following properties in the output type are being deprecated : 'UserList' 'UserListStatus'
+  - The following properties are being added to the output type : 'UserList' 'UserListStatus'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudCluster`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.ICluster' is changing
+  - The following properties in the output type are being deprecated : 'AggregatorOrSingleRackDefinitionBareMetalMachineConfigurationData' 'AggregatorOrSingleRackDefinitionStorageApplianceConfigurationData' 'AvailableUpgradeVersion' 'ComputeRackDefinition' 'WorkloadResourceId'
+  - The following properties are being added to the output type : 'AggregatorOrSingleRackDefinitionBareMetalMachineConfigurationData' 'AggregatorOrSingleRackDefinitionStorageApplianceConfigurationData' 'AvailableUpgradeVersion' 'ComputeRackDefinition' 'WorkloadResourceId'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudClusterManager`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IClusterManager' is changing
+  - The following properties in the output type are being deprecated : 'AvailabilityZone' 'ClusterVersion'
+  - The following properties are being added to the output type : 'AvailabilityZone' 'ClusterVersion'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudKubernetesCluster`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IKubernetesCluster' is changing
+  - The following properties in the output type are being deprecated : 'AadConfigurationAdminGroupObjectId' 'AttachedNetworkConfigurationL2Network' 'AttachedNetworkConfigurationL3Network' 'AttachedNetworkConfigurationTrunkedNetwork' 'AttachedNetworkId' 'AvailableUpgrade' 'BgpServiceLoadBalancerConfigurationBgpAdvertisement' 'BgpServiceLoadBalancerConfigurationBgpPeer' 'BgpServiceLoadBalancerConfigurationIPAddressPool' 'ControlPlaneNodeConfigurationAdministratorConfigurationSshPublicKey' 'ControlPlaneNodeConfigurationAvailabilityZone' 'FeatureStatuses' 'InitialAgentPoolConfiguration' 'L2ServiceLoadBalancerConfigurationIPAddressPool' 'NetworkConfigurationPodCidr' 'NetworkConfigurationServiceCidr' 'Node' 'SshPublicKey'
+  - The following properties are being added to the output type : 'AadConfigurationAdminGroupObjectId' 'AttachedNetworkConfigurationL2Network' 'AttachedNetworkConfigurationL3Network' 'AttachedNetworkConfigurationTrunkedNetwork' 'AttachedNetworkId' 'AvailableUpgrade' 'BgpServiceLoadBalancerConfigurationBgpAdvertisement' 'BgpServiceLoadBalancerConfigurationBgpPeer' 'BgpServiceLoadBalancerConfigurationIPAddressPool' 'ControlPlaneNodeConfigurationAdministratorConfigurationSshPublicKey' 'ControlPlaneNodeConfigurationAvailabilityZone' 'FeatureStatuses' 'InitialAgentPoolConfiguration' 'L2ServiceLoadBalancerConfigurationIPAddressPool' 'NetworkConfigurationPodCidr' 'NetworkConfigurationServiceCidr' 'Node' 'SshPublicKey'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudKubernetesClusterFeature`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IKubernetesClusterFeature' is changing
+  - The following properties in the output type are being deprecated : 'Option'
+  - The following properties are being added to the output type : 'Option'
+  - Change description : The type of property will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudL2Network`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IL2Network' is changing
+  - The following properties in the output type are being deprecated : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'VirtualMachinesAssociatedId'
+  - The following properties are being added to the output type : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'VirtualMachinesAssociatedId'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudL3Network`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IL3Network' is changing
+  - The following properties in the output type are being deprecated : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'VirtualMachinesAssociatedId'
+  - The following properties are being added to the output type : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'VirtualMachinesAssociatedId'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudMetricsConfiguration`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IClusterMetricsConfiguration' is changing
+  - The following properties in the output type are being deprecated : 'DisabledMetric' 'EnabledMetric'
+  - The following properties are being added to the output type : 'DisabledMetric' 'EnabledMetric'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudStorageAppliance`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IStorageAppliance' is changing
+  - The following properties in the output type are being deprecated : 'SecretRotationStatus'
+  - The following properties are being added to the output type : 'SecretRotationStatus'
+  - Change description : The type of property will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudTrunkedNetwork`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.ITrunkedNetwork' is changing
+  - The following properties in the output type are being deprecated : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'IsolationDomainId' 'VirtualMachinesAssociatedId' 'Vlan'
+  - The following properties are being added to the output type : 'AssociatedResourceId' 'HybridAksClustersAssociatedId' 'IsolationDomainId' 'VirtualMachinesAssociatedId' 'Vlan'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudVirtualMachine`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IVirtualMachine' is changing
+  - The following properties in the output type are being deprecated : 'NetworkAttachment' 'PlacementHint' 'SshPublicKey' 'StorageProfileVolumeAttachment' 'Volume'
+  - The following properties are being added to the output type : 'NetworkAttachment' 'PlacementHint' 'SshPublicKey' 'StorageProfileVolumeAttachment' 'Volume'
+  - Change description : The types of properties will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzNetworkCloudVolume`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.NetworkCloud.Models.Api20250201.IVolume' is changing
+  - The following properties in the output type are being deprecated : 'AttachedTo'
+  - The following properties are being added to the output type : 'AttachedTo'
+  - Change description : The type of property will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
 ## Az.Nginx
 
 ### `Get-AzNginxConfiguration`
@@ -1178,3 +1698,77 @@ Preview modules are not included in this list. Read more about [module version t
     The type of the parameter is changing from 'Array' to 'List'.
     - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
     - The change is expected to take effect from version : '9.0.0'
+
+## Az.StorageMover
+
+### `Get-AzStorageMoverAgent`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.StorageMover.Models.Api20240701.IAgent' is changing
+  - The following properties in the output type are being deprecated : 'UploadLimitScheduleWeeklyRecurrence'
+  - The following properties are being added to the output type : 'UploadLimitScheduleWeeklyRecurrence'
+  - Change description : The type of the property UploadLimitScheduleWeeklyRecurrence will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzStorageMoverJobDefinition`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  The cmdlet parameter set is being deprecated. There will be no replacement for it.
+  - Change description : The parameter set Create will be removed. Suggest to use CreateExpanded and CreateViaJsonString instead. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `New-AzStorageMoverProject`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  The cmdlet parameter set is being deprecated. There will be no replacement for it.
+  - Change description : The parameter set Create will be removed. Suggest to use CreateExpanded and CreateViaJsonString instead. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzStorageMover`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  The cmdlet parameter set is being deprecated. There will be no replacement for it.
+  - Change description : The parameter set Update and UpdateViaIdentity will be removed. Suggest to use UpdateExpanded, UpdateViaIdentityExpanded and UpdateViaJsonString instead. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzStorageMoverAgent`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  - The output type 'Microsoft.Azure.PowerShell.Cmdlets.StorageMover.Models.Api20240701.IAgent' is changing
+  - The following properties in the output type are being deprecated : 'UploadLimitScheduleWeeklyRecurrence'
+  - The following properties are being added to the output type : 'UploadLimitScheduleWeeklyRecurrence'
+  - Change description : The type of the property UploadLimitScheduleWeeklyRecurrence will be changed from fixed array to 'List'. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+- Cmdlet breaking-change will happen to parameter set `UpdateAzStorageMoverAgent_Update`
+  The cmdlet parameter set is being deprecated. There will be no replacement for it.
+  - Change description : The parameter set Update and UpdateViaIdentity will be removed. Suggest to use UpdateExpanded, UpdateViaIdentityExpanded and UpdateViaJsonString instead. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+- Cmdlet breaking-change will happen to parameter set `UpdateAzStorageMoverAgent_UpdateViaIdentity`
+  The cmdlet parameter set is being deprecated. There will be no replacement for it.
+  - Change description : The parameter set Update and UpdateViaIdentity will be removed. Suggest to use UpdateExpanded, UpdateViaIdentityExpanded and UpdateViaJsonString instead. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzStorageMoverJobDefinition`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  The cmdlet parameter set is being deprecated. There will be no replacement for it.
+  - Change description : The parameter set Update and UpdateViaIdentity will be removed. Suggest to use UpdateExpanded, UpdateViaIdentityExpanded and UpdateViaJsonString instead. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
+
+### `Update-AzStorageMoverProject`
+
+- Cmdlet breaking-change will happen to all parameter sets
+  The cmdlet parameter set is being deprecated. There will be no replacement for it.
+  - Change description : The parameter set Update and UpdateViaIdentity will be removed. Suggest to use UpdateExpanded, UpdateViaIdentityExpanded and UpdateViaJsonString instead. 
+  - This change will take effect on '11/3/2025'- The change is expected to take effect from Az version : '15.0.0'
+  - The change is expected to take effect from version : '2.0.0'
